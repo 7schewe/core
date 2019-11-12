@@ -1,9 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'  
 
- group = 'com.github.7schewe'
- artifacts = 'core'
- version = 'master-SNAPSHOT'
+group = 'com.github.7schewe'
+artifacts = 'core'
+version = 'master-SNAPSHOT
 
 android { 
     compileSdkVersion 29
