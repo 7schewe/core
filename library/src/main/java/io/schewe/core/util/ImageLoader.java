@@ -21,13 +21,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Objects;
 
-@SuppressWarnings("ResultOfMethodCallIgnored")
 public class ImageLoader {
 
     private final static String IMAGE_DIRECTORY = "";
     private final static String SUB_DIRECTORY = "locpics/";
     private final String JPEG_EXTENSION = ".jpg";
-    private Context context;
+    private final Context context;
 
     public ImageLoader(Context context) {
         this.context = context;

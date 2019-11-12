@@ -19,7 +19,7 @@ public class AppRater {
     private String rateButtonText;
     private String laterButtonText;
     private String declineButtonText;
-    private Activity activity;
+    private final Activity activity;
     private int days;
     private int launches;
 

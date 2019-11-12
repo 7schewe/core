@@ -12,8 +12,8 @@ import io.schewe.core.preferences.PreferenceManager;
 
 public class WhatsNew {
 
-    private static SparseArray<String> changeLogs = new SparseArray<>();
-    private Activity activity;
+    private static final SparseArray<String> changeLogs = new SparseArray<>();
+    private final Activity activity;
 
     private WhatsNew(Activity activity){ this.activity = activity; }
 

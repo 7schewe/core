@@ -5,10 +5,11 @@ import android.content.Context;
 import io.schewe.core.preferences.PreferenceManager;
 
 
+@SuppressWarnings("WeakerAccess")
 public class ThemeManager {
 
     private static ThemeManager INSTANCE;
-    private PreferenceManager preferenceManager;
+    private final PreferenceManager preferenceManager;
     private ThemeNode actualTheme = null;
     private ThemeNode firstTheme = null;
     private ThemeNode lastTheme = null;
@@ -58,8 +59,8 @@ public class ThemeManager {
     }
 
     class ThemeNode {
-        private int themeResourceId;
-        private boolean isDarkTheme;
+        private final int themeResourceId;
+        private final boolean isDarkTheme;
         private ThemeNode nextTheme = null;
 
         ThemeNode(int themeResourceId, boolean isDarkTheme) { this.themeResourceId = themeResourceId; this.isDarkTheme = isDarkTheme; }

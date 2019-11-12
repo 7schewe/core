@@ -2,6 +2,7 @@ package io.schewe.core;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -42,7 +43,7 @@ public abstract class ADrawerBaseActivity extends AppCompatActivity {
         permissionHandler = new PermissionHandler(this);
     }
 
-    @Override public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){ this.permissionHandler.onRequestPermissionsResult(requestCode, permissions, grantResults); }
+    @Override public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){ this.permissionHandler.onRequestPermissionsResult(requestCode, permissions, grantResults); }
 
     @Override protected void onStart() { super.onStart(); navigator.setSelectedMenu(getActualNavigationItem()); }
 

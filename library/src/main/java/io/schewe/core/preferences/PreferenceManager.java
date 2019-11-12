@@ -19,7 +19,7 @@ public class PreferenceManager {
     private static final String LAUNCH_COUNT    = "launchCount";
     private static final String FIRST_LAUNCH    = "firstLaunch";
     private static final String CURRENT_VERSION = "currentVersion";
-    private SharedPreferences preferences;
+    private final SharedPreferences preferences;
 
     private PreferenceManager(Context context){
         preferences = context.getSharedPreferences(PREFS_NAME, MODE_PRIVATE);

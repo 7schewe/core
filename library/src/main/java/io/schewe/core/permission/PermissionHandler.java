@@ -15,8 +15,8 @@ import io.schewe.core.util.Callback;
 
 public class PermissionHandler {
 
-    private Map<Integer, Callback.SimpleCallback> callbacks;
-    private Activity activity;
+    private final Map<Integer, Callback.SimpleCallback> callbacks;
+    private final Activity activity;
 
     @SuppressLint("UseSparseArrays")
     public PermissionHandler(Activity activity){
@@ -28,6 +28,7 @@ public class PermissionHandler {
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         for(Integer permissionCode : this.callbacks.keySet()) if (requestCode == permissionCode) if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+            //noinspection ConstantConditions
             this.callbacks.get(permissionCode).execute();
     }
 

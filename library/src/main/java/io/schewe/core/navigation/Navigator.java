@@ -20,10 +20,10 @@ import io.schewe.core.util.Callback.CallbackWithParameters;
 public class Navigator implements NavigationView.OnNavigationItemSelectedListener {
 
     private final Activity context;
-    private DrawerLayout layout;
-    private NavigationView navigationView;
-    private static SparseArray<CallbackWithParameters> navigationAction = new SparseArray<>();
-    private static List<CallbackWithParameters> callbacks     = new LinkedList<>();
+    private final DrawerLayout layout;
+    private final NavigationView navigationView;
+    private static final SparseArray<CallbackWithParameters> navigationAction = new SparseArray<>();
+    private static final List<CallbackWithParameters> callbacks     = new LinkedList<>();
 
     public Navigator(final Activity context, DrawerLayout drawer, Toolbar toolbar, NavigationView navigationView) {
         this.context = context;

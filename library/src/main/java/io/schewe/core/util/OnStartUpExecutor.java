@@ -7,7 +7,7 @@ import java.util.List;
 
 public class OnStartUpExecutor {
 
-    private static List<Callback.CallbackWithParameters> tasks = new LinkedList<>();
+    private static final List<Callback.CallbackWithParameters> tasks = new LinkedList<>();
 
     private OnStartUpExecutor(){}
 
