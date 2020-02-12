@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file:///media/kseven/22ad7ce6-0bb0-4a95-a9a6-52f4642bc03c/Android/Projects/core/core.iml" filepath="/media/kseven/22ad7ce6-0bb0-4a95-a9a6-52f4642bc03c/Android/Projects/core/core.iml" />
-      <module fileurl="file:///media/kseven/22ad7ce6-0bb0-4a95-a9a6-52f4642bc03c/Android/Projects/core/library/library.iml" filepath="/media/kseven/22ad7ce6-0bb0-4a95-a9a6-52f4642bc03c/Android/Projects/core/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core.iml" filepath="$PROJECT_DIR$/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io.schewe.android.core/io.schewe.android.core.iml" filepath="$PROJECT_DIR$/io.schewe.android.core/io.schewe.android.core.iml" />
     </modules>
   </component>
 </project>
